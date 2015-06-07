@@ -10,6 +10,7 @@
 #import <XCTest/XCTest.h>
 
 #import "RADDollar.h"
+#import "RADMoney.h"
 
 @interface RADDollarTests : XCTestCase
 
@@ -26,16 +27,16 @@
 }
 
 - (void)testMultiplication{
-    RADDollar *dolar=[[RADDollar alloc]initWithAmount:5];
-    RADDollar *ten=[[RADDollar alloc]initWithAmount:10];
+    RADDollar *dolar=[RADMoney dollarWithAmount:5];
+    RADDollar *ten=[RADMoney dollarWithAmount:10];
     RADDollar *total=[dolar times:2];
     
     XCTAssertEqualObjects(ten, total,@"5*2 should be 10");
 }
 
 -(void) testEquality{
-    RADDollar *five = [[RADDollar alloc]initWithAmount:5];
-    RADDollar *ten = [[RADDollar alloc]initWithAmount:10];
+    RADDollar *five = [RADMoney dollarWithAmount:5];
+    RADDollar *ten = [RADMoney dollarWithAmount:10];
     RADDollar *total = [five times:2];
     
     XCTAssertEqualObjects(ten, total,@"Equivalent objects should be equal!");
@@ -43,8 +44,8 @@
 }
 
 -(void) testHash{
-    RADDollar *a = [[RADDollar alloc]initWithAmount:2];
-    RADDollar *b = [[RADDollar alloc]initWithAmount:2];
+    RADDollar *a = [RADMoney dollarWithAmount:2];
+    RADDollar *b = [RADMoney dollarWithAmount:2];
     
     XCTAssertEqual([a hash], [b hash],@"Equal objects must have same hash");
 }
@@ -54,8 +55,8 @@
     
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wundeclared-selector"
-    RADDollar *euro = [[RADDollar alloc]initWithAmount:2];
-    XCTAssertEqual(2,[[euro performSelector:@selector(amount)]integerValue], @"Value stored must be equal that init");
+    RADDollar *dollar = [RADMoney dollarWithAmount:2];
+    XCTAssertEqual(2,[[dollar performSelector:@selector(amount)]integerValue], @"Value stored must be equal that init");
 #pragma clang diagnostic pop
 }
 

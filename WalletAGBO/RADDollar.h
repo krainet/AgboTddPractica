@@ -12,7 +12,7 @@
 
 @interface RADDollar : RADMoney
 
--(RADDollar*) times:(NSInteger) multiplier;
+
 
 
 @end

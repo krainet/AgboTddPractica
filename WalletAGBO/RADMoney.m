@@ -9,24 +9,44 @@
 #import "RADMoney.h"
 #import "NSObject+GNUStepAddons.h"
 #import "RADMoney-Private.h"
+#import "RADEuro.h"
+#import "RADDollar.h"
 
 @implementation RADMoney
 
-- (instancetype)initWithAmount:(NSInteger) amount{
++(id) euroWithAmount:(NSInteger) amount{
+    return [[RADMoney alloc]initWithAmount:amount currency:@"EUR"];
+}
+
++(id) dollarWithAmount:(NSInteger) amount{
+    return [[RADMoney alloc]initWithAmount:amount currency:@"USD"];
+}
+
+
+- (instancetype)initWithAmount:(NSInteger) amount currency:(NSString*) currency{
     self = [super init];
     if (self) {
         _amount=@(amount);
+        _currency=currency;
     }
     return self;
 }
 
 
--(RADMoney*) times:(NSInteger) multiplier{
+-(id) times:(NSInteger) multiplier{
     //Jamas deberia llamarse a esto
     //Se llama desde subclase
     
     //_cmd es un parametro oculto que nos indica cual es el selector actual (mensaje actual)
-    return [self subclassResponsibility:_cmd];
+    //return [self subclassResponsibility:_cmd];
+    
+    
+    RADMoney *money = [[RADMoney alloc]
+                       initWithAmount:[self.amount integerValue]*
+                       multiplier currency:self.currency];
+    return money;
+    
+    
 }
 
 #pragma mark - Ovewritten

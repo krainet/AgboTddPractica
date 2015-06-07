@@ -12,13 +12,6 @@
 
 @implementation RADDollar
 
--(RADDollar*) times:(NSInteger) multiplier{
-    RADDollar *newDollar = [[RADDollar alloc]initWithAmount:[self.amount integerValue]*multiplier];
-    return newDollar;
-}
-
-
-#pragma mark - Overwritten
 
 
 @end

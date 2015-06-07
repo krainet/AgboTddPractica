@@ -12,10 +12,7 @@
 
 @implementation RADEuro
 
--(RADEuro*) times:(NSInteger) multiplier{
-    RADEuro *newEuro = [[RADEuro alloc]initWithAmount:[self.amount integerValue]*multiplier];
-    return newEuro;
-}
+
 
 
 #pragma mark - Overwritten

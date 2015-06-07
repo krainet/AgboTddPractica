@@ -24,11 +24,18 @@
     [super tearDown];
 }
 
-- (void)testThatTimesRaisesException{
-    //Compruebo lanzamiento de exception
-    RADMoney *money = [[RADMoney alloc]initWithAmount:1];
-    XCTAssertThrows([money times:2],@"Should raise an exception");
+
+-(void) testCurrencies{
+    XCTAssertEqualObjects(@"EUR", [[RADMoney euroWithAmount:1] currency], @"Currency should be euro");
+    XCTAssertEqualObjects(@"USD", [[RADMoney dollarWithAmount:1] currency], @"Currency should be dollar");
 }
+
+
+//- (void)testThatTimesRaisesException{
+//    //Compruebo lanzamiento de exception
+//    RADMoney *money = [[RADMoney alloc]initWithAmount:1];
+//    XCTAssertThrows([money times:2],@"Should raise an exception");
+//}
 
 
 @end

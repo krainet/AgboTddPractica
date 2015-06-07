@@ -11,6 +11,5 @@
 
 @interface RADEuro : RADMoney
 
--(RADEuro*) times:(NSInteger) multiplier;
 
 @end
