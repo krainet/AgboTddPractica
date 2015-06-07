@@ -42,5 +42,23 @@
     XCTAssertFalse([total isEqual:five],@"Non equivalent objects");
 }
 
+-(void) testHash{
+    RADDollar *a = [[RADDollar alloc]initWithAmount:2];
+    RADDollar *b = [[RADDollar alloc]initWithAmount:2];
+    
+    XCTAssertEqual([a hash], [b hash],@"Equal objects must have same hash");
+}
+
+-(void) testAmountStorage{
+    //Ocultar warnings controlados
+    
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
+    RADDollar *euro = [[RADDollar alloc]initWithAmount:2];
+    XCTAssertEqual(2,[[euro performSelector:@selector(amount)]integerValue], @"Value stored must be equal that init");
+#pragma clang diagnostic pop
+}
+
+
 
 @end

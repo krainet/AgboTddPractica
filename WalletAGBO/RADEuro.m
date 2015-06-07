@@ -7,31 +7,19 @@
 //
 
 #import "RADEuro.h"
+#import "RADMoney-Private.h"
 
-@interface RADEuro ()
-@property (nonatomic) NSInteger amount;
-@end
 
 @implementation RADEuro
 
-- (instancetype)initWithAmount:(NSInteger)amount{
-    self = [super init];
-    if (self) {
-        _amount=amount;
-    }
-    return self;
-}
-
-
 -(RADEuro*) times:(NSInteger) multiplier{
-    RADEuro *newEuro = [[RADEuro alloc]initWithAmount:self.amount*multiplier];
+    RADEuro *newEuro = [[RADEuro alloc]initWithAmount:[self.amount integerValue]*multiplier];
     return newEuro;
 }
 
 
 #pragma mark - Overwritten
--(BOOL)isEqual:(id)object{
-    return [self amount]==[object amount];
-}
+
+
 
 @end

@@ -8,9 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface RADDollar : NSObject
+#import "RADMoney.h"
 
--(id) initWithAmount:(NSInteger) amount;
+@interface RADDollar : RADMoney
+
 -(RADDollar*) times:(NSInteger) multiplier;
 
 

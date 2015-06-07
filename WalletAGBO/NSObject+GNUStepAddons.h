@@ -1,5 +1,5 @@
 //
-//  RADEuro.h
+//  NSObject+GNUStepAddons.h
 //  WalletAGBO
 //
 //  Created by RAMON ALBERTI DANES on 3/6/15.
@@ -7,10 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "RADMoney.h"
 
-@interface RADEuro : RADMoney
+@interface NSObject (GNUStepAddons)
 
--(RADEuro*) times:(NSInteger) multiplier;
+-(id) subclassResponsibility: (SEL)aSel;
 
 @end

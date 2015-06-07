@@ -1,5 +1,5 @@
 //
-//  RADEuro.h
+//  RADMoney.h
 //  WalletAGBO
 //
 //  Created by RAMON ALBERTI DANES on 3/6/15.
@@ -7,10 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "RADMoney.h"
 
-@interface RADEuro : RADMoney
-
--(RADEuro*) times:(NSInteger) multiplier;
-
+@interface RADMoney : NSObject
+-(id)initWithAmount:(NSInteger) amount;
+-(RADMoney*) times:(NSInteger) multiplier;
 @end

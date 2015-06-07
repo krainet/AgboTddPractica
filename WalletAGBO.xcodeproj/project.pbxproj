@@ -10,6 +10,9 @@
 		1E79B13A1B1FA15B00E09640 /* RADDollarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E79B1391B1FA15B00E09640 /* RADDollarTests.m */; };
 		1E79B13D1B1FA20200E09640 /* RADDollar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E79B13C1B1FA20200E09640 /* RADDollar.m */; };
 		1E79B13E1B1FA25500E09640 /* RADDollar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E79B13C1B1FA20200E09640 /* RADDollar.m */; };
+		1E79B1411B1FA57E00E09640 /* RADMoney.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E79B1401B1FA57E00E09640 /* RADMoney.m */; };
+		1E79B1451B1FA9BD00E09640 /* NSObject+GNUStepAddons.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E79B1441B1FA9BD00E09640 /* NSObject+GNUStepAddons.m */; };
+		1E79B1471B1FAC6600E09640 /* RADMoneyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E79B1461B1FAC6600E09640 /* RADMoneyTests.m */; };
 		1EF8667D1B1F8B8500CAFF46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF8667C1B1F8B8500CAFF46 /* main.m */; };
 		1EF866801B1F8B8500CAFF46 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF8667F1B1F8B8500CAFF46 /* AppDelegate.m */; };
 		1EF866821B1F8B8500CAFF46 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EF866811B1F8B8500CAFF46 /* Images.xcassets */; };
@@ -33,6 +36,12 @@
 		1E79B1391B1FA15B00E09640 /* RADDollarTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RADDollarTests.m; sourceTree = "<group>"; };
 		1E79B13B1B1FA20200E09640 /* RADDollar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RADDollar.h; sourceTree = "<group>"; };
 		1E79B13C1B1FA20200E09640 /* RADDollar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RADDollar.m; sourceTree = "<group>"; };
+		1E79B13F1B1FA57E00E09640 /* RADMoney.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RADMoney.h; sourceTree = "<group>"; };
+		1E79B1401B1FA57E00E09640 /* RADMoney.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RADMoney.m; sourceTree = "<group>"; };
+		1E79B1431B1FA9BD00E09640 /* NSObject+GNUStepAddons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GNUStepAddons.h"; sourceTree = "<group>"; };
+		1E79B1441B1FA9BD00E09640 /* NSObject+GNUStepAddons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GNUStepAddons.m"; sourceTree = "<group>"; };
+		1E79B1461B1FAC6600E09640 /* RADMoneyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RADMoneyTests.m; sourceTree = "<group>"; };
+		1E79B1481B1FB52A00E09640 /* RADMoney-Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RADMoney-Private.h"; sourceTree = "<group>"; };
 		1EF866771B1F8B8500CAFF46 /* WalletAGBO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletAGBO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EF8667B1B1F8B8500CAFF46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EF8667C1B1F8B8500CAFF46 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -70,8 +79,18 @@
 			children = (
 				1EF8669A1B1F8C9E00CAFF46 /* RADEuroTests.m */,
 				1E79B1391B1FA15B00E09640 /* RADDollarTests.m */,
+				1E79B1461B1FAC6600E09640 /* RADMoneyTests.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		1E79B1421B1FA96000E09640 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				1E79B1431B1FA9BD00E09640 /* NSObject+GNUStepAddons.h */,
+				1E79B1441B1FA9BD00E09640 /* NSObject+GNUStepAddons.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 		1EF8666E1B1F8B8500CAFF46 = {
@@ -95,6 +114,7 @@
 		1EF866791B1F8B8500CAFF46 /* WalletAGBO */ = {
 			isa = PBXGroup;
 			children = (
+				1E79B1421B1FA96000E09640 /* Categories */,
 				1EF8667E1B1F8B8500CAFF46 /* AppDelegate.h */,
 				1EF8667F1B1F8B8500CAFF46 /* AppDelegate.m */,
 				1EF866811B1F8B8500CAFF46 /* Images.xcassets */,
@@ -138,6 +158,9 @@
 				1EF8669D1B1F8DD300CAFF46 /* RADEuro.m */,
 				1E79B13B1B1FA20200E09640 /* RADDollar.h */,
 				1E79B13C1B1FA20200E09640 /* RADDollar.m */,
+				1E79B13F1B1FA57E00E09640 /* RADMoney.h */,
+				1E79B1401B1FA57E00E09640 /* RADMoney.m */,
+				1E79B1481B1FB52A00E09640 /* RADMoney-Private.h */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -245,7 +268,9 @@
 				1EF8669E1B1F8DD300CAFF46 /* RADEuro.m in Sources */,
 				1EF866801B1F8B8500CAFF46 /* AppDelegate.m in Sources */,
 				1EF8667D1B1F8B8500CAFF46 /* main.m in Sources */,
+				1E79B1451B1FA9BD00E09640 /* NSObject+GNUStepAddons.m in Sources */,
 				1E79B13D1B1FA20200E09640 /* RADDollar.m in Sources */,
+				1E79B1411B1FA57E00E09640 /* RADMoney.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E79B1471B1FAC6600E09640 /* RADMoneyTests.m in Sources */,
 				1EF866A01B1F8EA500CAFF46 /* RADEuro.m in Sources */,
 				1EF8669B1B1F8C9E00CAFF46 /* RADEuroTests.m in Sources */,
 				1E79B13A1B1FA15B00E09640 /* RADDollarTests.m in Sources */,
