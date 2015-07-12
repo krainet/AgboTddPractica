@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "RADWallet.h"
+#import "RADWalletTableViewController.h"
+#import "RADBroker.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +20,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+
+    
+    RADWallet *wallet = [self DummyWallet];
+    
+    RADBroker *broker = [RADBroker new];
+    [broker addRate: 2 fromCurrency: @"USD" toCurrency: @"EUR"];
+
+    RADWalletTableViewController *tvc=[[RADWalletTableViewController alloc] initWithModel:wallet broker:broker];
+    
+    self.window.rootViewController = tvc;
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
@@ -43,6 +56,17 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+-(RADWallet*) DummyWallet{
+    RADWallet *tmp=[[RADWallet alloc] initWithAmount:100 currency:@"EUR"];
+    //[tmp addMoney:[RADMoney euroWithAmount:10]];
+    [tmp addMoney:[RADMoney euroWithAmount:10]];
+    [tmp addMoney:[RADMoney euroWithAmount:10]];
+    [tmp addMoney:[RADMoney dollarWithAmount:10]];
+    [tmp addMoney:[RADMoney euroWithAmount:100]];
+    [tmp addMoney:[RADMoney dollarWithAmount:50]];
+    return tmp;
 }
 
 @end

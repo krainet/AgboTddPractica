@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E79B13A1B1FA15B00E09640 /* RADDollarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E79B1391B1FA15B00E09640 /* RADDollarTests.m */; };
-		1E79B13D1B1FA20200E09640 /* RADDollar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E79B13C1B1FA20200E09640 /* RADDollar.m */; };
-		1E79B13E1B1FA25500E09640 /* RADDollar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E79B13C1B1FA20200E09640 /* RADDollar.m */; };
 		1E79B1411B1FA57E00E09640 /* RADMoney.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E79B1401B1FA57E00E09640 /* RADMoney.m */; };
 		1E79B1451B1FA9BD00E09640 /* NSObject+GNUStepAddons.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E79B1441B1FA9BD00E09640 /* NSObject+GNUStepAddons.m */; };
 		1E79B1471B1FAC6600E09640 /* RADMoneyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E79B1461B1FAC6600E09640 /* RADMoneyTests.m */; };
+		1EEA5CAA1B2470A900672665 /* RADBrokerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EEA5CA91B2470A900672665 /* RADBrokerTests.m */; };
+		1EEA5CAD1B2471A400672665 /* RADBroker.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EEA5CAC1B2471A400672665 /* RADBroker.m */; };
+		1EEA5CAE1B2471AE00672665 /* RADBroker.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EEA5CAC1B2471A400672665 /* RADBroker.m */; };
+		1EEA5CB01B2497AD00672665 /* RADWalletTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EEA5CAF1B2497AD00672665 /* RADWalletTests.m */; };
+		1EEA5CB31B249A8D00672665 /* RADWallet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EEA5CB21B249A8D00672665 /* RADWallet.m */; };
+		1EEA5CB41B249BDB00672665 /* RADWallet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EEA5CB21B249A8D00672665 /* RADWallet.m */; };
+		1EEA5CB91B24AFDE00672665 /* RADSimpleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EEA5CB71B24AFDE00672665 /* RADSimpleViewController.m */; };
+		1EEA5CBA1B24AFDE00672665 /* RADSimpleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EEA5CB81B24AFDE00672665 /* RADSimpleViewController.xib */; };
+		1EEA5CBD1B24B01000672665 /* RADControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EEA5CBC1B24B01000672665 /* RADControllerTests.m */; };
+		1EEA5CC01B24B55800672665 /* RADWalletTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EEA5CBF1B24B55800672665 /* RADWalletTableViewController.m */; };
 		1EF8667D1B1F8B8500CAFF46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF8667C1B1F8B8500CAFF46 /* main.m */; };
 		1EF866801B1F8B8500CAFF46 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF8667F1B1F8B8500CAFF46 /* AppDelegate.m */; };
 		1EF866821B1F8B8500CAFF46 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EF866811B1F8B8500CAFF46 /* Images.xcassets */; };
 		1EF866851B1F8B8500CAFF46 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EF866831B1F8B8500CAFF46 /* LaunchScreen.xib */; };
-		1EF8669B1B1F8C9E00CAFF46 /* RADEuroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF8669A1B1F8C9E00CAFF46 /* RADEuroTests.m */; };
-		1EF8669E1B1F8DD300CAFF46 /* RADEuro.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF8669D1B1F8DD300CAFF46 /* RADEuro.m */; };
-		1EF866A01B1F8EA500CAFF46 /* RADEuro.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF8669D1B1F8DD300CAFF46 /* RADEuro.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,15 +37,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1E79B1391B1FA15B00E09640 /* RADDollarTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RADDollarTests.m; sourceTree = "<group>"; };
-		1E79B13B1B1FA20200E09640 /* RADDollar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RADDollar.h; sourceTree = "<group>"; };
-		1E79B13C1B1FA20200E09640 /* RADDollar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RADDollar.m; sourceTree = "<group>"; };
 		1E79B13F1B1FA57E00E09640 /* RADMoney.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RADMoney.h; sourceTree = "<group>"; };
 		1E79B1401B1FA57E00E09640 /* RADMoney.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RADMoney.m; sourceTree = "<group>"; };
 		1E79B1431B1FA9BD00E09640 /* NSObject+GNUStepAddons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GNUStepAddons.h"; sourceTree = "<group>"; };
 		1E79B1441B1FA9BD00E09640 /* NSObject+GNUStepAddons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GNUStepAddons.m"; sourceTree = "<group>"; };
 		1E79B1461B1FAC6600E09640 /* RADMoneyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RADMoneyTests.m; sourceTree = "<group>"; };
-		1E79B1481B1FB52A00E09640 /* RADMoney-Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RADMoney-Private.h"; sourceTree = "<group>"; };
+		1EEA5CA91B2470A900672665 /* RADBrokerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RADBrokerTests.m; sourceTree = "<group>"; };
+		1EEA5CAB1B2471A400672665 /* RADBroker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RADBroker.h; sourceTree = "<group>"; };
+		1EEA5CAC1B2471A400672665 /* RADBroker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RADBroker.m; sourceTree = "<group>"; };
+		1EEA5CAF1B2497AD00672665 /* RADWalletTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RADWalletTests.m; sourceTree = "<group>"; };
+		1EEA5CB11B249A8D00672665 /* RADWallet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RADWallet.h; sourceTree = "<group>"; };
+		1EEA5CB21B249A8D00672665 /* RADWallet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RADWallet.m; sourceTree = "<group>"; };
+		1EEA5CB61B24AFDE00672665 /* RADSimpleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RADSimpleViewController.h; sourceTree = "<group>"; };
+		1EEA5CB71B24AFDE00672665 /* RADSimpleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RADSimpleViewController.m; sourceTree = "<group>"; };
+		1EEA5CB81B24AFDE00672665 /* RADSimpleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RADSimpleViewController.xib; sourceTree = "<group>"; };
+		1EEA5CBC1B24B01000672665 /* RADControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RADControllerTests.m; sourceTree = "<group>"; };
+		1EEA5CBE1B24B55800672665 /* RADWalletTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RADWalletTableViewController.h; sourceTree = "<group>"; };
+		1EEA5CBF1B24B55800672665 /* RADWalletTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RADWalletTableViewController.m; sourceTree = "<group>"; };
 		1EF866771B1F8B8500CAFF46 /* WalletAGBO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletAGBO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EF8667B1B1F8B8500CAFF46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EF8667C1B1F8B8500CAFF46 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -51,9 +63,6 @@
 		1EF866841B1F8B8500CAFF46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		1EF8668A1B1F8B8500CAFF46 /* WalletAGBOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalletAGBOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EF8668F1B1F8B8500CAFF46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1EF8669A1B1F8C9E00CAFF46 /* RADEuroTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RADEuroTests.m; sourceTree = "<group>"; };
-		1EF8669C1B1F8DD300CAFF46 /* RADEuro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RADEuro.h; sourceTree = "<group>"; };
-		1EF8669D1B1F8DD300CAFF46 /* RADEuro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RADEuro.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +86,9 @@
 		1E79B1381B1FA12800E09640 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1EF8669A1B1F8C9E00CAFF46 /* RADEuroTests.m */,
-				1E79B1391B1FA15B00E09640 /* RADDollarTests.m */,
 				1E79B1461B1FAC6600E09640 /* RADMoneyTests.m */,
+				1EEA5CA91B2470A900672665 /* RADBrokerTests.m */,
+				1EEA5CAF1B2497AD00672665 /* RADWalletTests.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -91,6 +100,26 @@
 				1E79B1441B1FA9BD00E09640 /* NSObject+GNUStepAddons.m */,
 			);
 			name = Categories;
+			sourceTree = "<group>";
+		};
+		1EEA5CB51B24AFAF00672665 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1EEA5CB61B24AFDE00672665 /* RADSimpleViewController.h */,
+				1EEA5CB71B24AFDE00672665 /* RADSimpleViewController.m */,
+				1EEA5CB81B24AFDE00672665 /* RADSimpleViewController.xib */,
+				1EEA5CBE1B24B55800672665 /* RADWalletTableViewController.h */,
+				1EEA5CBF1B24B55800672665 /* RADWalletTableViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		1EEA5CBB1B24AFE600672665 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1EEA5CBC1B24B01000672665 /* RADControllerTests.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		1EF8666E1B1F8B8500CAFF46 = {
@@ -114,6 +143,7 @@
 		1EF866791B1F8B8500CAFF46 /* WalletAGBO */ = {
 			isa = PBXGroup;
 			children = (
+				1EEA5CB51B24AFAF00672665 /* Controllers */,
 				1E79B1421B1FA96000E09640 /* Categories */,
 				1EF8667E1B1F8B8500CAFF46 /* AppDelegate.h */,
 				1EF8667F1B1F8B8500CAFF46 /* AppDelegate.m */,
@@ -138,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				1EF8668E1B1F8B8500CAFF46 /* Supporting Files */,
+				1EEA5CBB1B24AFE600672665 /* Controllers */,
 				1E79B1381B1FA12800E09640 /* Models */,
 			);
 			path = WalletAGBOTests;
@@ -154,13 +185,12 @@
 		1EF8669F1B1F8DD700CAFF46 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1EF8669C1B1F8DD300CAFF46 /* RADEuro.h */,
-				1EF8669D1B1F8DD300CAFF46 /* RADEuro.m */,
-				1E79B13B1B1FA20200E09640 /* RADDollar.h */,
-				1E79B13C1B1FA20200E09640 /* RADDollar.m */,
 				1E79B13F1B1FA57E00E09640 /* RADMoney.h */,
 				1E79B1401B1FA57E00E09640 /* RADMoney.m */,
-				1E79B1481B1FB52A00E09640 /* RADMoney-Private.h */,
+				1EEA5CAB1B2471A400672665 /* RADBroker.h */,
+				1EEA5CAC1B2471A400672665 /* RADBroker.m */,
+				1EEA5CB11B249A8D00672665 /* RADWallet.h */,
+				1EEA5CB21B249A8D00672665 /* RADWallet.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -246,6 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EEA5CBA1B24AFDE00672665 /* RADSimpleViewController.xib in Resources */,
 				1EF866851B1F8B8500CAFF46 /* LaunchScreen.xib in Resources */,
 				1EF866821B1F8B8500CAFF46 /* Images.xcassets in Resources */,
 			);
@@ -265,11 +296,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EF8669E1B1F8DD300CAFF46 /* RADEuro.m in Sources */,
+				1EEA5CC01B24B55800672665 /* RADWalletTableViewController.m in Sources */,
+				1EEA5CB31B249A8D00672665 /* RADWallet.m in Sources */,
 				1EF866801B1F8B8500CAFF46 /* AppDelegate.m in Sources */,
+				1EEA5CAD1B2471A400672665 /* RADBroker.m in Sources */,
 				1EF8667D1B1F8B8500CAFF46 /* main.m in Sources */,
 				1E79B1451B1FA9BD00E09640 /* NSObject+GNUStepAddons.m in Sources */,
-				1E79B13D1B1FA20200E09640 /* RADDollar.m in Sources */,
+				1EEA5CB91B24AFDE00672665 /* RADSimpleViewController.m in Sources */,
 				1E79B1411B1FA57E00E09640 /* RADMoney.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,11 +311,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EEA5CAE1B2471AE00672665 /* RADBroker.m in Sources */,
+				1EEA5CAA1B2470A900672665 /* RADBrokerTests.m in Sources */,
+				1EEA5CB01B2497AD00672665 /* RADWalletTests.m in Sources */,
+				1EEA5CBD1B24B01000672665 /* RADControllerTests.m in Sources */,
+				1EEA5CB41B249BDB00672665 /* RADWallet.m in Sources */,
 				1E79B1471B1FAC6600E09640 /* RADMoneyTests.m in Sources */,
-				1EF866A01B1F8EA500CAFF46 /* RADEuro.m in Sources */,
-				1EF8669B1B1F8C9E00CAFF46 /* RADEuroTests.m in Sources */,
-				1E79B13A1B1FA15B00E09640 /* RADDollarTests.m in Sources */,
-				1E79B13E1B1FA25500E09640 /* RADDollar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
