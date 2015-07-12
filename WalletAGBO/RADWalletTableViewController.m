@@ -83,9 +83,8 @@
     return cell;
 }
 
-// Override to support conditional editing of the table view.
+// Edit
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
     if (indexPath.row < [self.model numberOfMoneysForSection:indexPath.section]) {
         return YES;
     }else{
@@ -95,17 +94,14 @@
 
 
 
-// Override to support editing the table view.
+// ACTIVAMOS delete
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
         [self.model takeMoney:[self.model moneyForIndexPath:indexPath
                                              toCurrency:nil
                                                    withBroker:self.broker]];
-        //        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
         [tableView reloadData];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }
 }
 
